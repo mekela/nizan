@@ -287,7 +287,7 @@ textarea{
 .float_none{float:none!important;}
 .text_right{text-align:right!important;}
 .text_center{text-align:center!important;}
-.text_left{text-align:left!important;}
+.text_left{text-align:left !important;}
 .absolute{position:absolute!important;}
 .relative{position:relative!important;}
 .fixed{position:fixed!important;}
@@ -305,5 +305,15 @@ textarea{
 //main containers
 .wrapper{
 @include povh('');
+}
+@include mq($min-width: 1200px) {
+  .container{
+    max-width: vw(1160px); 
+  }
+}
+@include mq($min-width: 1200px) {
+  .container-xl{
+    max-width: vw(1600px); 
+  }
 }
 

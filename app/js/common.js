@@ -1,18 +1,15 @@
 $(document).ready(function() {
-	//fancybox
-	$('.fancybox').fancybox({
-		helpers: {
-			overlay: {
-				locked: false
-			}
-		}
+	//slider
+	$('.main-slider__block').slick({
+		infinite: true,
+		rtl: true,
+		arrows: false,
+		dots: true
 	});
-	
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$('.menu-slider__block, .before-after__slider, .video__slider').slick({
+		infinite: true,
+		rtl: true,
+		arrows: true,
+		dots: false
 	});
 });
