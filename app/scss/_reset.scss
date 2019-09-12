@@ -308,12 +308,17 @@ textarea{
 }
 @include mq($min-width: 1200px) {
   .container{
-    max-width: vw(1160px); 
+    max-width: vw(1080px); 
   }
 }
 @include mq($min-width: 1200px) {
   .container-xl{
-    max-width: vw(1600px); 
+    max-width: vw(1700px); 
+  }
+  .header{
+    .container-xl{
+      max-width: vw(1740px); 
+    }
   }
 }
 

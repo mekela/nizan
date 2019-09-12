@@ -355,11 +355,13 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 60.41667vw; } }
+    max-width: 56.25vw; } }
 
 @media only screen and (min-width: 1200px) {
   .container-xl {
-    max-width: 83.33333vw; } }
+    max-width: 88.54167vw; }
+  .header .container-xl {
+    max-width: 90.625vw; } }
 
 /*----------header----------*/
 .header {
@@ -367,7 +369,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 3.64583vw 0 0 0;
+  padding: 3.90625vw 0 0 0;
   z-index: 100; }
 
 .menu-trigger {
@@ -453,13 +455,13 @@ textarea {
       border-radius: 1.82292vw;
       border: 0.36458vw solid #fe7b87;
       background: #ffffff;
-      padding: 0.88542vw 2.60417vw;
+      padding: 0.36458vw 2.60417vw;
       width: auto; }
 
 .logo-page {
   position: absolute;
-  bottom: 4.16667vw;
-  left: 5.20833vw;
+  bottom: -4.16667vw;
+  left: 6.25vw;
   width: 16.35417vw;
   height: 16.35417vw;
   box-shadow: 0.26042vw -0.15625vw 0.46875vw 0.05208vw rgba(1, 1, 1, 0.3);
@@ -474,7 +476,7 @@ textarea {
 .shape-rose {
   background: #ffabb3 url(../img/shape-rose.jpg) no-repeat center top;
   background-size: contain;
-  padding: 18.33333vw 0 5.20833vw 0;
+  padding: 17.29167vw 0 4.6875vw 0;
   position: relative;
   margin-top: -12.5vw;
   color: #fff; }
@@ -482,17 +484,21 @@ textarea {
 .text {
   font-size: 1.30208vw;
   font-weight: 500;
-  line-height: 1.8; }
+  line-height: 1.7; }
   .text h1, .text h2, .text h3 {
     font-size: 3.22917vw;
-    font-weight: 900; }
+    font-weight: 900;
+    line-height: 1.4; }
 
 .main-slider {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../img/slider-bg.jpg);
-  padding: 4.0625vw 0; }
+  padding: 4.0625vw 0 3.125vw; }
+  @media only screen and (min-width: 1350px) {
+    .main-slider .container {
+      max-width: 68.75vw; } }
   .main-slider section {
     display: flex;
     flex-direction: row-reverse; }
@@ -502,13 +508,13 @@ textarea {
     font-size: 2.39583vw;
     font-weight: 900;
     line-height: 0.9;
-    width: 26.09375vw;
+    max-width: 20.88542vw;
     box-shadow: 0.15625vw -0.05208vw 0.36458vw 0.05208vw rgba(1, 1, 1, 0.4);
     border-radius: 3.125vw 0 0 3.125vw;
     background-color: #ffabb3;
-    padding: 1.71875vw 8.85417vw 1.71875vw 3.90625vw;
+    padding: 1.5625vw 7.29167vw 1.5625vw 0.26042vw;
     box-sizing: border-box;
-    margin-bottom: 6.25vw; }
+    margin-bottom: 5.20833vw; }
   .main-slider__item {
     display: block !important;
     color: #000000;
@@ -520,13 +526,13 @@ textarea {
       letter-spacing: 0.31px; }
   .main-slider__numb {
     color: #000000;
-    font-size: 23.125vw;
+    font-size: 20.52083vw;
     font-weight: 700;
     line-height: 0.9;
     padding-left: 1.5625vw; }
   .main-slider .slick-dots {
     text-align: center;
-    padding-top: 12.5vw; }
+    padding-top: 10.83333vw; }
     .main-slider .slick-dots li {
       display: inline-block;
       margin: 0 0.26042vw; }
@@ -559,16 +565,23 @@ textarea {
     color: #000; }
   .food-text img {
     width: 100%; }
+  .food-text p {
+    line-height: 1.44; }
+  .food-text__pt {
+    padding-top: 6.51042vw; }
+  .food-text .food-text__sport {
+    width: 117%;
+    float: left; }
 
 .menu-slider {
   background: #ffabb3;
-  padding: 3.07292vw 0 7.8125vw 0; }
+  padding: 1.51042vw 0 7.8125vw 0; }
   .menu-slider .title {
     color: #fff; }
   .menu-slider__block {
     background-color: #ffffff;
     background: url(../img/patern.png) repeat;
-    padding: 1.97917vw 0vw 0vw 0vw;
+    padding: 1.45833vw 0vw 0vw 0vw;
     box-shadow: -0.20833vw 0 0.52083vw rgba(22, 22, 22, 0.51);
     border-radius: 3.125vw;
     position: relative; }
@@ -577,14 +590,14 @@ textarea {
     font-size: 2.1875vw;
     font-weight: 700;
     text-align: center;
-    padding-bottom: 1.30208vw; }
+    padding-bottom: 0.78125vw; }
   .menu-slider__item {
     padding: 0 4.63542vw 5.20833vw; }
   .menu-slider__section {
     box-shadow: -0.20833vw 0 0.52083vw rgba(22, 22, 22, 0.51);
     border-radius: 3.125vw;
     background-color: #f4f5f7;
-    padding: 6.77083vw 6.77083vw 3.125vw 6.77083vw;
+    padding: 5.72917vw 6.77083vw 1.04167vw 6.77083vw;
     color: #000000;
     font-size: 1.51042vw;
     font-weight: 500;
@@ -629,23 +642,23 @@ textarea {
   font-size: 3.28125vw;
   font-weight: 900;
   text-align: center;
-  padding-bottom: 1.5625vw; }
+  padding-bottom: 0.78125vw; }
 
 .before-after {
-  padding: 10.41667vw 0; }
+  padding: 12.5vw 0 10.9375vw 0; }
   .before-after img {
     width: 100%; }
   .before-after section img {
     width: 3.85417vw; }
   .before-after__slider {
-    padding: 0 7.8125vw; }
+    padding: 0 9.89583vw 0 5.20833vw; }
   .before-after h4 {
     color: #fe7b87;
     font-size: 2.39583vw;
     font-weight: 700;
-    padding-bottom: 0.9375vw; }
+    padding-bottom: 0.41667vw; }
   .before-after__item {
-    padding-bottom: 1.30208vw;
+    padding-bottom: 0.26042vw;
     display: flex; }
     .before-after__item p {
       color: #fe7b87;
@@ -655,7 +668,7 @@ textarea {
       border-radius: 3.125vw;
       background-color: #f4f5f7;
       display: flex;
-      padding: 1.77083vw 5.20833vw;
+      padding: 1.25vw 5.20833vw;
       text-align: center;
       color: #fe7b87;
       font-size: 1.51042vw;
@@ -689,7 +702,7 @@ textarea {
         content: '>'; }
 
 .video {
-  padding: 6.77083vw 0;
+  padding: 4.42708vw 0 5.3125vw 0;
   background: #ffabb3; }
   .video__slider {
     padding: 0 5.20833vw; }
@@ -725,13 +738,17 @@ textarea {
         content: '>'; }
 
 .contact {
-  padding: 9.11458vw 0;
+  padding: 7.8125vw 0 5.3125vw 0;
   color: #fe7b87;
   background: #f2f0f0; }
+  @media only screen and (min-width: 1200px) {
+    .contact .container {
+      max-width: 63.02083vw; } }
   .contact__images {
     display: flex;
     justify-content: center;
-    padding-bottom: 3.125vw; }
+    padding-bottom: 3.125vw;
+    padding-top: 0.52083vw; }
     .contact__images figure {
       width: 8.95833vw;
       height: 8.95833vw;
@@ -741,8 +758,8 @@ textarea {
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      margin: 0 0.67708vw;
-      margin-bottom: 1.5625vw;
+      margin: 0 1.30208vw;
+      margin-bottom: 2.1875vw;
       text-align: center; }
       .contact__images figure img {
         width: 60%;
@@ -760,7 +777,8 @@ textarea {
       text-align: center;
       color: #fe7b87;
       font-size: 1.51042vw;
-      font-weight: 900; }
+      font-weight: 900;
+      background: none; }
 
 /*----------end main----------*/
 /*----------footer----------*/
@@ -773,7 +791,7 @@ textarea {
 
 .social a {
   display: inline-block;
-  padding: 0 8px; }
+  padding: 0 0.41667vw; }
 
 .social img {
   max-width: 3.64583vw; }
