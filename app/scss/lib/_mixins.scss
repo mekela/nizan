@@ -2,6 +2,10 @@
   $vw-context: (1920*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
+@function mvw($target) { 
+  $vw-context: (650*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
 
 //start my mixins
 @mixin povh($povh) {
