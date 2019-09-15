@@ -127,8 +127,11 @@
 		 display: flex;
 		 align-items: center;
 		 height: 100vh;
-		 position: relative;
 		 z-index: 2;
+		 background-size: contain;
+		 background-position: bottom center;
+		 background-repeat: no-repeat;
+		 background-color: #f0f2f1;
 		 @include mq($max-width: 992px) {
 			 height: auto;
 		 }
@@ -154,6 +157,12 @@
 			 @include mq($max-width: 992px) {
 				 width: 80%;
 				 text-align: center;
+			 }
+		 }
+		 &__logo{
+			 display: block;
+			 img{
+				 width: vw(214px);
 			 }
 		 }
 		 &__title{
@@ -829,6 +838,114 @@
 			width: 100%;
 		}
 	}
+	.catalog{
+		padding: vw(75px) 0;
+		img{
+			width: 100%;
+			display: block;
+		}
+		&__more{
+			text-align: left;
+			margin-top: vw(20px);
+			a{
+				padding-left: vw(70px);
+				padding-right: vw(70px);
+			}
+		}
+		figure{
+			margin-bottom: vw(30px);
+			position: relative;
+			overflow: hidden;
+			figcaption{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(#fd96a0, 0.7);
+				color: #ffffff;
+				font-size: vw(38px);
+				font-weight: 500;
+				opacity: 0;
+				@include transition(all 0.5s);
+			}
+			a{
+				text-decoration: none;
+			}
+			&:hover{
+				figcaption{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.catalog-form{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: vw(30px) 0;
+		background: rgba(#fe7b87, 0.8);
+		width: 100%;
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		input[type=text], input[type=search], input[type=email]{
+			width: vw(479px);
+			height: vw(69px);
+			border-radius: vw(35px);
+			background-color: #f6fafd;
+			padding: 0 vw(40px);
+			border: none;
+			color: #b7b7b7;
+			font-size: vw(29px);
+			font-weight: 500;
+		}
+		&__input{
+			padding-left: vw(70px);
+		}
+		&__choose{
+			color: #f8f9fb;
+			font-size: vw(29px);
+			font-weight: 700;
+			display: flex;
+			label{
+				display: flex;
+				align-items: center;
+				padding-left: vw(45px);
+			}
+			input{
+				margin-left: vw(20px);
+			}
+		}
+		.button{
+			height: 100%;
+			box-shadow: vw(-4px) 0 vw(10px) rgba(22, 22, 22, 0.51);
+			border-radius: vw(35px);
+			background-color: #b7b7b7;
+			padding-left: vw(50px);
+			padding-right: vw(50px);
+		}
+	}
+	.main-image-catalog{
+		background-size: contain;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-color: #f0f2f1;
+		@include mq($min-width: 993px) {
+			background-image: none !important;
+		}
+		.main-image{
+			@include mq($max-width: 992px) {
+				min-height: 80vh;
+				background: none !important;
+			}
+		}
+	}
 /*----------end main----------*/	
 
 	
@@ -855,5 +972,79 @@
 			 }
 		 }
 	 }
-
+	.catalog__modal{
+		background: #ffabb3;
+		color: #ffffff;
+		font-size: vw(31px);
+		font-weight: 400;
+		padding: vw(115px) vw(155px);
+		padding-bottom: 0;
+		padding-left: vw(95px);
+		h4{
+			color: #e7e9e8;
+			font-size: vw(75px);
+			font-weight: 700;
+		}
+		h6{
+			font-size: vw(38px);
+			font-weight: 700;
+		}
+		h5{
+		font-size: vw(54px);
+		font-weight: 700;
+		}
+	}
+	.fancybox-close-small, .fancybox-slide--html .fancybox-close-small{
+		width: vw(46px);
+		height: vw(46px);
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+		color: #f1f3f2;
+		font-size: vw(29px);
+		font-weight: 900;
+		font-weight: 400;
+		top: vw(42px);
+		right: vw(42px);
+		opacity: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		svg, path{
+			display: none;
+		}
+		&:before{
+			content: 'x';
+			color: #f1f3f2;
+			font-size: vw(29px);
+			font-weight: 900;
+			line-height: 1;
+		}
+	}
+	.catalog__modal-item{
+		direction: rtl;
+		text-align: right;
+	}
+	.catalog__modal-download{
+		padding-top: vw(22px);
+		a{
+			width: vw(183px);
+			height: vw(81px);
+			display: inline-block;
+			box-shadow: vw(-4px) 0 vw(10px) rgba(22, 22, 22, 0.51);
+			border-radius: vw(60px) vw(60px) 0 0;
+			background-color: #ffffff;
+			color: #000000;
+			font-size: vw(29px);
+			font-weight: 700;
+			text-align: center;
+			text-decoration: none;
+			span{
+				display: block;
+			}
+			img{
+				width: vw(24px);
+			}
+		}
+	}
 /*----------end footer----------*/
