@@ -12,6 +12,19 @@ $(document).ready(function() {
 		arrows: true,
 		dots: false
 	});
+	$('.catalog__row').slick({
+		infinite: true,
+		rtl: true,
+		arrows: true,
+		dots: false,
+		mobileFirst: true,
+		responsive: [
+			{
+			breakpoint: 992,
+			settings: 'unslick'
+			},
+		]
+	});
 
 	//menu
 	$( ".menu-trigger button" ).click(function() {

@@ -6,11 +6,34 @@
 .show-mobile{
     display: none;
 }
+.plus-more{
+    display: none;
+    padding-top: mvw(36px);
+    a, span{
+        display: inline-block;
+        width: mvw(82px);
+        height: mvw(82px);
+        border: mvw(7px) solid #ffffff;
+        color: #ffffff;
+        font-size: mvw(67px);
+        font-weight: 900;
+        border-radius: 50%;
+        text-align: center;
+        line-height: mvw(65px);
+        cursor: pointer;
+        &:before{
+            content: '+';
+        }
+    }
+}
 @include mq($max-width: 992px) {
   .hide-mobile{
       display: none;
   }
   .show-mobile{
+      display: block;
+  }
+  .plus-more{
       display: block;
   }
 }
